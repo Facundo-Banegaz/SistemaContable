@@ -1,0 +1,40 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\stefa\\OneDrive\\Desktop\\REPO GITHUB\\LiquidacionExpensas\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{75A31815-7E34-48AB-84A2-574FDC8FEA45}|CapaPresentacion\\CapaPresentacion.csproj|c:\\users\\stefa\\onedrive\\desktop\\repo github\\liquidacionexpensas\\capapresentacion\\frmexpensa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{75A31815-7E34-48AB-84A2-574FDC8FEA45}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\frmexpensa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmExpensa.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\stefa\\OneDrive\\Desktop\\REPO GITHUB\\LiquidacionExpensas\\CapaPresentacion\\frmExpensa.cs",
+              "RelativeDocumentMoniker": "CapaPresentacion\\frmExpensa.cs",
+              "ToolTip": "C:\\Users\\stefa\\OneDrive\\Desktop\\REPO GITHUB\\LiquidacionExpensas\\CapaPresentacion\\frmExpensa.cs [Design]",
+              "RelativeToolTip": "CapaPresentacion\\frmExpensa.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T12:23:56.02Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
