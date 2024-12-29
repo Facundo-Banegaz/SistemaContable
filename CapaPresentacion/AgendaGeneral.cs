@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CapaDominio;
+using CapaNegocio;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,89 +16,148 @@ namespace CapaPresentacion
 {
     public partial class AgendaGeneral : Form
     {
-        // Diccionario para almacenar los eventos por fecha
-        private Dictionary<DateTime, string> eventosPorFecha;
+        private List<Agenda> ListaAgenda;
+
 
         public AgendaGeneral()
         {
             InitializeComponent();
-            eventosPorFecha = new Dictionary<DateTime, string>();
         }
 
-        private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
+ 
+        
+
+
+ 
+        private void ipbExitAgenda_Click(object sender, EventArgs e)
         {
-            lblFecha.Text= monthCalendar1.SelectionStart.ToShortDateString();
-
-
-        }
-
-
-        private void AgendaGeneral_Load(object sender, EventArgs e)
-        {
-            // Inicializar valores por defecto
-            monthCalendar1.TodayDate = DateTime.Today;
-            lblFecha.Text = "Fecha seleccionada: " + monthCalendar1.SelectionStart.ToShortDateString();
-
-            // Si ya hay un texto guardado para esa fecha, mostrarlo en el RichTextBox
-            DateTime fechaSeleccionada = monthCalendar1.SelectionStart;
-            if (eventosPorFecha.ContainsKey(fechaSeleccionada))
-            {
-                rtxtAgendaGeneral.Text = eventosPorFecha[fechaSeleccionada];
-            }
-            else
-            {
-                rtxtAgendaGeneral.Clear(); // Si no hay evento, limpiar el RichTextBox
-            }
-
-           
-
-
+            this.Close();
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            DateTime fechaSeleccionada = monthCalendar1.SelectionStart;
-            string textoEvento = rtxtAgendaGeneral.Text;
 
-            // Guardar el evento en el diccionario de eventos por fecha
-            if (eventosPorFecha.ContainsKey(fechaSeleccionada))
+            CN_Agenda _Agenda = new CN_Agenda();
+            Agenda agenda = new Agenda();
+
+            try
             {
-                eventosPorFecha[fechaSeleccionada] = textoEvento; // Actualizar evento si ya existe
-            }
-            else
-            {
-                eventosPorFecha.Add(fechaSeleccionada, textoEvento); // Agregar nuevo evento
-            }
-
-            // Mostrar mensaje de confirmación
-            MessageBox.Show("Evento guardado para la fecha: " + fechaSeleccionada.ToShortDateString());
-
-            //Guardar los eventos en un archivo de texto o base de datos
-            GuardarEventosEnArchivo();
-        }
-
-        // Método para guardar los eventos en un archivo de texto
-        private void GuardarEventosEnArchivo()
-        {
-            string filePath = "eventos.txt";
-
-            using (StreamWriter writer = new StreamWriter(filePath, false))
-            {
-                foreach (var evento in eventosPorFecha)
+                // Validar que la fecha no sea null
+                if (dtp_fecha.Value == DateTime.MinValue)
                 {
-                    writer.WriteLine($"{evento.Key.ToShortDateString()}: {evento.Value}");
+                    MessageBox.Show("Debe seleccionar una fecha válida.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
                 }
+                if (dtp_fecha.Value < DateTime.Now.Date) // .Date para comparar solo la fecha sin hora
+                {
+                    MessageBox.Show("No puede seleccionar una fecha en el pasado.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                // Validar que la descripción no sea vacía
+                if (string.IsNullOrWhiteSpace(rtxtAgendaGeneral.Text))
+                {
+                    MessageBox.Show("La descripción no puede estar vacía.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                // Asignar valores si la validación es exitosa
+                agenda.Fecha = dtp_fecha.Value;
+                agenda.Descripcion = rtxtAgendaGeneral.Text.Trim();
+
+                _Agenda.InsertarAgenda(agenda);
+                CargarGrilla();
+
+                MessageBox.Show("Agregado exitosamente.", "");
+                Limpiar();
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Se produjo un error al guardar los datos: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+
+
         }
 
         private void btnLimpiarCampos_Click(object sender, EventArgs e)
         {
+            Limpiar();
+        }
+
+        private void Limpiar()
+        {
+            dtp_fecha.Value = DateTime.Today;
+
             rtxtAgendaGeneral.Clear();
         }
 
-        private void ipbExitAgenda_Click(object sender, EventArgs e)
+        private void AgendaGeneral_Load(object sender, EventArgs e)
         {
-            this.Close();
+            CargarGrilla();
+            ArregloDataGridView(dgvAgenda);
+        }
+        private void CargarGrilla()
+        {
+            CN_Agenda _Agenda = new CN_Agenda();
+
+           
+
+            ListaAgenda = _Agenda.ListaAgenda();
+
+            dgvAgenda.DataSource = ListaAgenda;
+
+
+        }
+        private void btn_eliminar_Click(object sender, EventArgs e)
+        {
+            CN_Agenda _Agenda = new CN_Agenda();
+
+            Agenda seleccionado = null;
+
+
+            try
+            {
+
+                if (dgvAgenda.CurrentRow != null)
+                {
+                    DialogResult respuesta = MessageBox.Show("¿Quieres Eliminar esta Agenda?", "Eliminar", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+                    if (respuesta == DialogResult.Yes)
+                    {
+                        seleccionado = (Agenda)dgvAgenda.CurrentRow.DataBoundItem;
+                        _Agenda.EliminarAgenda(seleccionado.Id);
+
+                        CargarGrilla();
+                    }
+                }
+                   
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+
+        private void ArregloDataGridView(DataGridView dgv_ingresos)
+        {
+            // Lógica del dataGridView
+            CN_Metodos _Metodos = new CN_Metodos();
+
+
+
+            dgv_ingresos.Columns["id"].Width = 300;
+            dgv_ingresos.Columns["Fecha"].Width = 400; // nombre_producto
+            dgv_ingresos.Columns["Descripcion"].Width = 400; // descripcion_producto 
+ 
+
+            dgv_ingresos.Columns["id"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dgv_ingresos.Columns["Fecha"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dgv_ingresos.Columns["Descripcion"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
+            _Metodos.AlternarColor(dgv_ingresos);
         }
     }
 }

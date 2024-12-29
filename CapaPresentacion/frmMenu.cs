@@ -6,97 +6,108 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls;
 using System.Windows.Forms;
+using CapaDominio;
 using FontAwesome.Sharp; //agregue libreria de fuentes
 
 namespace CapaPresentacion
 {
     public partial class frmMenu : Form
     {
+        public Administrador _Administrador;
+
+
+        
+        public frmMenu(Administrador administrador)
+        {
+            InitializeComponent();
+            this._Administrador = administrador;
+            Text = $"¡¡Bienvenido al Sistema  {_Administrador.ApyNom} !! Nombre de  Usuario: ''{_Administrador.NombreUsuario}'' | Acceso: ''{_Administrador.Acceso}''.";
+
+
+        }
         public frmMenu()
         {
             InitializeComponent();
-
-
-            // Crear un arreglo de botones
-            Button[] buttons = { ibtnRegistro, ibtnConsorcios, ibtnPropietarios, ibtnAdmin, ibtnConfig, ibtnGuiaUsuario };
-
-            // Asignar el mismo evento MouseEnter y MouseLeave a todos los botones
-            foreach (var button in buttons)
-            {
-                button.MouseEnter += Button_MouseEnter;
-                button.MouseLeave += Button_MouseLeave;
-            }
         }
 
-        // Cambiar el color de la fuente cuando el mouse entra en el botón
-        private void Button_MouseEnter(object sender, EventArgs e)
-        {
-            Button button = sender as Button;  // Obtener el botón que disparó el evento
-            if (button != null)
-            {
-                button.ForeColor = Color.FromArgb(106, 102, 157);  // Cambiar el color de la fuente a rojo
-            }
-        }
 
-        // Restaurar el color de la fuente cuando el mouse sale del botón
-        private void Button_MouseLeave(object sender, EventArgs e)
-        {
-            Button button = sender as Button;  // Obtener el botón que disparó el evento
-            if (button != null)
-            {
-                button.ForeColor = Color.Silver;  // Restaurar el color de la fuente a negro
-            }
-        }
 
         private void ibtnRegistro_Click(object sender, EventArgs e)
         {
-            frmRegistro registro = new frmRegistro();
-            registro.Show();
-            this.Hide(); //mantenerlo oculto y NO cerrado p/volver a él
+        
+            frmRegistro frmRegistro = new frmRegistro();
+
+            frmRegistro.ShowDialog();
         }
 
-        private void ipbSalir_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
 
-        private void ipbSalir_MouseHover(object sender, EventArgs e)
-        {
-            ipbSalir.ForeColor = Color.FromArgb(106, 102, 157);
-        }
+  
 
-        private void ipbSalir_MouseLeave(object sender, EventArgs e)
-        {
-            ipbSalir.ForeColor = Color.Silver;
-        }
+ 
 
         private void ibtnConsorcios_Click(object sender, EventArgs e)
         {
-            frmConsorcio frmconsorcio = new frmConsorcio();
-            frmconsorcio.Show();
-            this.Hide();
+           frmConsorcio frmConsorcio = new frmConsorcio();
+            frmConsorcio.ShowDialog();
         }
 
         private void ibtnPropietarios_Click(object sender, EventArgs e)
         {
-            frmPropietario frmpropietario=new frmPropietario();
-            frmpropietario.Show();
-            this.Hide();
+            frmPropietario frmPropietario = new frmPropietario();
+            frmPropietario.ShowDialog();
         }
 
         private void ibtnAdmin_Click(object sender, EventArgs e)
         {
-            frmAdmin frmadmin= new frmAdmin();
-            frmadmin.Show();
-            this.Hide();
+           frmAdmin frmAdmin = new frmAdmin();
+            frmAdmin.ShowDialog();
+    
         }
 
-        private void ibtnConfig_Click(object sender, EventArgs e)
+  
+        private void ibtnGuiaUsuario_Click(object sender, EventArgs e)
         {
-            frmConfig frmconfig=new frmConfig();
-            frmconfig.Show();
-            this.Hide();
+            // Ruta del archivo PDF
+            string pdfPath = @"C:\Users\baneg\Downloads\ManualUsuario.pdf"; // Cambia esto según la ubicación de tu PDF
+
+            if (System.IO.File.Exists(pdfPath))
+            {
+                FrmGuia frmGuia = new FrmGuia();
+                frmGuia.PdfPath = pdfPath; // Pasa la ruta del PDF al formulario FrmGuia
+                frmGuia.ShowDialog(); // Abre el formulario FrmGuia
+            }
+            else
+            {
+                MessageBox.Show("El archivo PDF no fue encontrado.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void ibtnUnidades_Click(object sender, EventArgs e)
+        {
+            frmUnidad frmUnidad = new frmUnidad();
+            frmUnidad.ShowDialog();
+        }
+
+
+        private void ipbSalirMenu_Click(object sender, EventArgs e)
+        {
+
+            DialogResult respuesta = MessageBox.Show("¿Quieres Salir del sistema?", "Salir", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+            if (respuesta == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+
+            
+        }
+
+        private void frmMenu_Load(object sender, EventArgs e)
+        {
+
+            
         }
     }
 }

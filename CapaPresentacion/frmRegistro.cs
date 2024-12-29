@@ -19,43 +19,43 @@ namespace CapaPresentacion
 
         private void ipbSalirRegistro_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
         }
 
         private void ibtnEgresos_Click(object sender, EventArgs e)
         {
             frmEgreso frmegreso= new frmEgreso();
-            frmegreso.Show();
+            frmegreso.ShowDialog();
         }
 
         private void ibtnIngresos_Click(object sender, EventArgs e)
         {
             frmIngreso frmingreso= new frmIngreso();
-            frmingreso.Show();
+            frmingreso.ShowDialog();
         }
 
         private void ibtnExpensas_Click(object sender, EventArgs e)
         {
             frmExpensa frmexpensa= new frmExpensa();
-            frmexpensa.Show();
+            frmexpensa.ShowDialog();
         }
 
         private void ibtnProp_Click(object sender, EventArgs e)
         {
             frmPropietarioRegistro frmpropregistro= new frmPropietarioRegistro();
-            frmpropregistro.Show();
+            frmpropregistro.ShowDialog();
         }
 
         private void ibtnComunicados_Click(object sender, EventArgs e)
         {
             frmComunicado frmcomunicado=new frmComunicado();
-            frmcomunicado.Show();
+            frmcomunicado.ShowDialog();
         }
 
         private void ibtnAgenda_Click(object sender, EventArgs e)
         {
            AgendaGeneral agendageneral=new AgendaGeneral();
-            agendageneral.Show();
+            agendageneral.ShowDialog();
         }
     }
 }

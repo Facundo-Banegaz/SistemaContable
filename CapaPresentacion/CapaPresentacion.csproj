@@ -36,6 +36,24 @@
     <Reference Include="FontAwesome.Sharp, Version=6.6.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
       <HintPath>..\packages\FontAwesome.Sharp.6.6.0\lib\net48\FontAwesome.Sharp.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.340.80\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.340.80\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.340.80\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.340.80\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.340.80\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
@@ -59,11 +77,19 @@
     <Compile Include="AgendaGeneral.Designer.cs">
       <DependentUpon>AgendaGeneral.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="DsReportes.cs">
+      <DependentUpon>DsReportes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsReportes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsReportes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="frmAdmin.cs">
       <SubType>Form</SubType>
@@ -71,17 +97,35 @@
     <Compile Include="frmAdmin.Designer.cs">
       <DependentUpon>frmAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAgregarEditarAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgregarEditarAdmin.Designer.cs">
+      <DependentUpon>frmAgregarEditarAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAgregarEditarConsorcio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAgregarEditarConsorcio.Designer.cs">
+      <DependentUpon>FrmAgregarEditarConsorcio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAgregarEditarPropietario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAgregarEditarPropietario.Designer.cs">
+      <DependentUpon>FrmAgregarEditarPropietario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAgregarEditarUnidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAgregarEditarUnidad.Designer.cs">
+      <DependentUpon>FrmAgregarEditarUnidad.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmComunicado.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmComunicado.Designer.cs">
       <DependentUpon>frmComunicado.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmConfig.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmConfig.Designer.cs">
-      <DependentUpon>frmConfig.cs</DependentUpon>
     </Compile>
     <Compile Include="frmConsorcio.cs">
       <SubType>Form</SubType>
@@ -100,6 +144,12 @@
     </Compile>
     <Compile Include="frmExpensa.Designer.cs">
       <DependentUpon>frmExpensa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGuia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGuia.Designer.cs">
+      <DependentUpon>FrmGuia.cs</DependentUpon>
     </Compile>
     <Compile Include="frmIngreso.cs">
       <SubType>Form</SubType>
@@ -131,16 +181,40 @@
     <Compile Include="frmRegistro.Designer.cs">
       <DependentUpon>frmRegistro.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmUnidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUnidad.Designer.cs">
+      <DependentUpon>frmUnidad.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reportes\FrmReporteExpensas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FrmReporteExpensas.Designer.cs">
+      <DependentUpon>FrmReporteExpensas.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AgendaGeneral.resx">
       <DependentUpon>AgendaGeneral.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAdmin.resx">
       <DependentUpon>frmAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAgregarEditarAdmin.resx">
+      <DependentUpon>frmAgregarEditarAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAgregarEditarConsorcio.resx">
+      <DependentUpon>FrmAgregarEditarConsorcio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAgregarEditarPropietario.resx">
+      <DependentUpon>FrmAgregarEditarPropietario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAgregarEditarUnidad.resx">
+      <DependentUpon>FrmAgregarEditarUnidad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmComunicado.resx">
       <DependentUpon>frmComunicado.cs</DependentUpon>
@@ -153,6 +227,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmExpensa.resx">
       <DependentUpon>frmExpensa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGuia.resx">
+      <DependentUpon>FrmGuia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmIngreso.resx">
       <DependentUpon>frmIngreso.cs</DependentUpon>
@@ -169,6 +246,9 @@
     <EmbeddedResource Include="frmRegistro.resx">
       <DependentUpon>frmRegistro.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmUnidad.resx">
+      <DependentUpon>frmUnidad.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -178,6 +258,21 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Reportes\FrmReporteExpensas.resx">
+      <DependentUpon>FrmReporteExpensas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\RprtExpensa.rdlc" />
+    <None Include="DsReportes.xsc">
+      <DependentUpon>DsReportes.xsd</DependentUpon>
+    </None>
+    <None Include="DsReportes.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsReportes.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DsReportes.xss">
+      <DependentUpon>DsReportes.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -188,9 +283,20 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Sources\ManualUsuario.pdf" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaDominio\CapaDominio.csproj">
+      <Project>{8295af14-abd4-4b53-9aed-2905fc6c0eeb}</Project>
+      <Name>CapaDominio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CapaNegocio\CapaNegocio.csproj">
+      <Project>{679076f3-1bdc-405a-93f4-58e086fb2ba3}</Project>
+      <Name>CapaNegocio</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

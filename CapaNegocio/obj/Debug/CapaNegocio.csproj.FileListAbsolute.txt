@@ -1,0 +1,11 @@
+C:\Users\baneg\OneDrive\Escritorio\LiquidacionExpensas - copia\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\Users\baneg\OneDrive\Escritorio\LiquidacionExpensas - copia\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\Users\baneg\OneDrive\Escritorio\LiquidacionExpensas - copia\CapaNegocio\bin\Debug\CapaDatos.dll
+C:\Users\baneg\OneDrive\Escritorio\LiquidacionExpensas - copia\CapaNegocio\bin\Debug\CapaDominio.dll
+C:\Users\baneg\OneDrive\Escritorio\LiquidacionExpensas - copia\CapaNegocio\bin\Debug\CapaDatos.pdb
+C:\Users\baneg\OneDrive\Escritorio\LiquidacionExpensas - copia\CapaNegocio\bin\Debug\CapaDominio.pdb
+C:\Users\baneg\OneDrive\Escritorio\LiquidacionExpensas - copia\CapaNegocio\obj\Debug\CapaNegocio.csproj.AssemblyReference.cache
+C:\Users\baneg\OneDrive\Escritorio\LiquidacionExpensas - copia\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\baneg\OneDrive\Escritorio\LiquidacionExpensas - copia\CapaNegocio\obj\Debug\CapaNego.81B9D119.Up2Date
+C:\Users\baneg\OneDrive\Escritorio\LiquidacionExpensas - copia\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\Users\baneg\OneDrive\Escritorio\LiquidacionExpensas - copia\CapaNegocio\obj\Debug\CapaNegocio.pdb
