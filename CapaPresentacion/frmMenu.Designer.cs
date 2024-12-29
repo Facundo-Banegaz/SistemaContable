@@ -211,6 +211,7 @@
             this.pnlMenuCentro.Name = "pnlMenuCentro";
             this.pnlMenuCentro.Size = new System.Drawing.Size(1339, 833);
             this.pnlMenuCentro.TabIndex = 0;
+            this.pnlMenuCentro.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlMenuCentro_Paint);
             // 
             // ipbSalirMenu
             // 

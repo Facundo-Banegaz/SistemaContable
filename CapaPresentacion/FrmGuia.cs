@@ -30,5 +30,10 @@ namespace CapaPresentacion
                 MessageBox.Show("El archivo PDF no fue encontrado.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
+        {
+
+        }
     }
 }

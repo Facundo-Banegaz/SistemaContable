@@ -70,7 +70,7 @@ namespace CapaPresentacion
         private void ibtnGuiaUsuario_Click(object sender, EventArgs e)
         {
             // Ruta del archivo PDF
-            string pdfPath = @"C:\Users\baneg\Downloads\ManualUsuario.pdf"; // Cambia esto según la ubicación de tu PDF
+            string pdfPath = @"Aqui va el pdf"; // Cambia esto según la ubicación de tu PDF
 
             if (System.IO.File.Exists(pdfPath))
             {
@@ -108,6 +108,11 @@ namespace CapaPresentacion
         {
 
             
+        }
+
+        private void pnlMenuCentro_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

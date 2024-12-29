@@ -63,5 +63,8 @@
       <Name>CapaDominio</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="DB_SISTEMA_ADMINISTRATIVO.bak" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

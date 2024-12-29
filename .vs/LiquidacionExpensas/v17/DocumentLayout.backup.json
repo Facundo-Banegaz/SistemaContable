@@ -1,7 +1,24 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\baneg\\OneDrive\\Escritorio\\LiquidacionExpensas - copia\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{75A31815-7E34-48AB-84A2-574FDC8FEA45}|CapaPresentacion\\CapaPresentacion.csproj|c:\\users\\baneg\\onedrive\\escritorio\\liquidacionexpensas - copia\\capapresentacion\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75A31815-7E34-48AB-84A2-574FDC8FEA45}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75A31815-7E34-48AB-84A2-574FDC8FEA45}|CapaPresentacion\\CapaPresentacion.csproj|c:\\users\\baneg\\onedrive\\escritorio\\liquidacionexpensas - copia\\capapresentacion\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{75A31815-7E34-48AB-84A2-574FDC8FEA45}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75A31815-7E34-48AB-84A2-574FDC8FEA45}|CapaPresentacion\\CapaPresentacion.csproj|c:\\users\\baneg\\onedrive\\escritorio\\liquidacionexpensas - copia\\capapresentacion\\frmguia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75A31815-7E34-48AB-84A2-574FDC8FEA45}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\frmguia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75A31815-7E34-48AB-84A2-574FDC8FEA45}|CapaPresentacion\\CapaPresentacion.csproj|c:\\users\\baneg\\onedrive\\escritorio\\liquidacionexpensas - copia\\capapresentacion\\frmguia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{75A31815-7E34-48AB-84A2-574FDC8FEA45}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\frmguia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,6 +59,56 @@
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmMenu.cs",
+              "DocumentMoniker": "C:\\Users\\baneg\\OneDrive\\Escritorio\\LiquidacionExpensas - copia\\CapaPresentacion\\frmMenu.cs",
+              "RelativeDocumentMoniker": "CapaPresentacion\\frmMenu.cs",
+              "ToolTip": "C:\\Users\\baneg\\OneDrive\\Escritorio\\LiquidacionExpensas - copia\\CapaPresentacion\\frmMenu.cs",
+              "RelativeToolTip": "CapaPresentacion\\frmMenu.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAADgv0cAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-29T23:44:46.623Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmMenu.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\baneg\\OneDrive\\Escritorio\\LiquidacionExpensas - copia\\CapaPresentacion\\frmMenu.cs",
+              "RelativeDocumentMoniker": "CapaPresentacion\\frmMenu.cs",
+              "ToolTip": "C:\\Users\\baneg\\OneDrive\\Escritorio\\LiquidacionExpensas - copia\\CapaPresentacion\\frmMenu.cs [Dise\u00F1o]",
+              "RelativeToolTip": "CapaPresentacion\\frmMenu.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-29T23:44:45.141Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FrmGuia.cs",
+              "DocumentMoniker": "C:\\Users\\baneg\\OneDrive\\Escritorio\\LiquidacionExpensas - copia\\CapaPresentacion\\FrmGuia.cs",
+              "RelativeDocumentMoniker": "CapaPresentacion\\FrmGuia.cs",
+              "ToolTip": "C:\\Users\\baneg\\OneDrive\\Escritorio\\LiquidacionExpensas - copia\\CapaPresentacion\\FrmGuia.cs",
+              "RelativeToolTip": "CapaPresentacion\\FrmGuia.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwBsAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-29T23:44:32.064Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FrmGuia.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\baneg\\OneDrive\\Escritorio\\LiquidacionExpensas - copia\\CapaPresentacion\\FrmGuia.cs",
+              "RelativeDocumentMoniker": "CapaPresentacion\\FrmGuia.cs",
+              "ToolTip": "C:\\Users\\baneg\\OneDrive\\Escritorio\\LiquidacionExpensas - copia\\CapaPresentacion\\FrmGuia.cs [Dise\u00F1o]",
+              "RelativeToolTip": "CapaPresentacion\\FrmGuia.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-29T23:44:28.358Z",
+              "EditorCaption": " [Dise\u00F1o]"
             }
           ]
         }
