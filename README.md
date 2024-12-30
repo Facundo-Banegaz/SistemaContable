@@ -55,7 +55,7 @@ El sistema fue implementado utilizando tecnologías como C# (.NET) y SQL Server,
 - **Entorno de Desarrollo**: Visual Studio.  
 - **Framework**: .NET Framework.
 - **Tecnología de Acceso a Datos**: ADO.NET.
-- - **Librerias**: FontAwesome, ReportViewerControl.
+- **Librerias**: FontAwesome, ReportViewerControl.
 ---
 
 ## Modelo de Base de Datos  
@@ -84,19 +84,6 @@ El sistema utiliza un modelo de base de datos relacional que organiza la informa
 
 ![Captura de pantalla 2024-12-07 113340](https://github.com/user-attachments/assets/9541f294-57d2-40e5-ae95-bc512b50487b)
 
----
-
-## Instalación y Configuración  
-
-### Requisitos Previos  
-1. Instalar el **.NET SDK** compatible con el proyecto.  
-2. Configurar una instancia funcional de **SQL Server**.  
-3. Tener instalado un IDE como **Visual Studio**.  
-
-### Pasos de Instalación  
-1. Clonar el repositorio:  
-   ```bash  
-[   git clone https://github.com/tuusuario/sistema-expensas.git  ](https://github.com/Facundo-Banegaz/SistemaContable.git)
 
 
 ## Imágenes del Proyecto
@@ -153,3 +140,14 @@ A continuación, se presentan capturas de pantalla del sistema en funcionamiento
 <img width="405" alt="FrmAdmin" src="https://github.com/user-attachments/assets/117b37b3-8aa8-4551-bc3f-c2bbe75625aa" />
 <img width="381" alt="FrmAgregarEditarAdmin" src="https://github.com/user-attachments/assets/f9111ee3-ecdb-4124-9a1f-50172d6d5c6d" />
 
+---
+
+## Instalación y Configuración  
+
+### Requisitos Previos  
+1. Instalar el **.NET SDK** compatible con el proyecto.  
+2. Configurar una instancia funcional de **SQL Server**.  
+3. Tener instalado un IDE como **Visual Studio**.  
+
+### Pasos de Instalación  
+1. Clonar el repositorio:  ```bash  [   git clone https://github.com/tuusuario/sistema-expensas.git  ](https://github.com/Facundo-Banegaz/SistemaContable.git)
