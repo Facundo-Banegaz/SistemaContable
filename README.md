@@ -122,13 +122,11 @@ A continuación, se presentan capturas de pantalla del sistema en funcionamiento
 <img width="215" alt="FrmIngreso" src="https://github.com/user-attachments/assets/6bb82332-8a1d-4afb-9799-c7b64263f4ad" />
 
 ### Gestion De Expensas
-<img width="437" alt="FrmRegistro" src="https://github.com/user-attachments/assets/5da10ba2-10ff-4bf3-b435-493728878961" />
+<img width="382" alt="FrmExpensas" src="https://github.com/user-attachments/assets/1763d90e-77bf-4849-a33b-8a4ce3e205c0" />
 
 #### Reporte de Expensas
 ![repor](https://github.com/user-attachments/assets/ad5801d6-f187-441d-9a7a-c3766f9fc868)
 ![eg](https://github.com/user-attachments/assets/6791c594-b33e-435e-8519-51426752adb6)
-
-
 
 #### Gestion De Agenda
 <img width="342" alt="FormAgenda" src="https://github.com/user-attachments/assets/2cadda48-d931-48d7-9d9c-e36ecaa50f9d" />
