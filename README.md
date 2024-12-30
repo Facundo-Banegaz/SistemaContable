@@ -4,6 +4,7 @@
 Este proyecto fue desarrollado en colaboración con mi compañera, y tiene como objetivo crear un sistema integral para la gestión de expensas en consorcios de edificios y condominios. Diseñado como un Producto Mínimo Viable (MVP), el sistema busca modernizar la administración de gastos e ingresos mediante herramientas tecnológicas que agilizan los cálculos, la generación de reportes y la organización de información clave.
 
 El sistema fue implementado utilizando tecnologías como C# (.NET) y SQL Server, proporcionando una interfaz intuitiva y funcional para que los administradores puedan gestionar múltiples consorcios de manera eficiente. Esta colaboración permitió complementar habilidades y abordar los desafíos del desarrollo con una visión conjunta, logrando un producto que satisface las necesidades de los usuarios.
+
 ---
 
 ## Funcionalidades Principales  
@@ -101,7 +102,8 @@ El sistema utiliza un modelo de base de datos relacional que organiza la informa
 A continuación, se presentan capturas de pantalla del sistema en funcionamiento:
 
 ### Pantalla Login
-<img width="342" alt="FormAgenda" src="https://github.com/user-attachments/assets/3ffe51b3-97e0-440e-afc3-7eeb883ce2ed" />
+![FormLogin](https://github.com/user-attachments/assets/52bddca6-9aad-49aa-b5f9-af83f12909a0)
+
 
 ### Pantalla Principal
 <img width="424" alt="FrmMenu" src="https://github.com/user-attachments/assets/ae863f1b-a48c-4997-a831-e76af5a28b10" />
@@ -119,9 +121,10 @@ A continuación, se presentan capturas de pantalla del sistema en funcionamiento
 ### Carga de Ingresos
 <img width="215" alt="FrmIngreso" src="https://github.com/user-attachments/assets/6bb82332-8a1d-4afb-9799-c7b64263f4ad" />
 
-#### Gestion De Expensas
+### Gestion De Expensas
+<img width="437" alt="FrmRegistro" src="https://github.com/user-attachments/assets/5da10ba2-10ff-4bf3-b435-493728878961" />
 
-
+#### Reporte de Expensas
 ![repor](https://github.com/user-attachments/assets/ad5801d6-f187-441d-9a7a-c3766f9fc868)
 ![eg](https://github.com/user-attachments/assets/6791c594-b33e-435e-8519-51426752adb6)
 
