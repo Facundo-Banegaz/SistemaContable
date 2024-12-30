@@ -154,7 +154,7 @@ A continuación, se presentan capturas de pantalla del sistema en funcionamiento
 Ubicar el archivo de backup de la base de datos que se encuentra en la carpeta Datos dentro del proyecto.
 Restaurar el backup en Microsoft SQL Server Management Studio.
 7.Abrir Visual Studio 2022, cargar el proyecto clonado y Configurar la cadena de conexión en el archivo de configuración para vincular el sistema con la base de datos restaurada.
-9. Compilar y ejecutar el proyecto desde Visual Studio 2022.
+8. Compilar y ejecutar el proyecto desde Visual Studio 2022.
 
 
 
