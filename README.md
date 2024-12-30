@@ -51,10 +51,11 @@ El sistema fue implementado utilizando tecnologías como C# (.NET) y SQL Server,
 
 ## Tecnologías Utilizadas  
 - **Lenguaje de Programación**: C# (.NET).  
-- **Base de Datos**: SQL Server.  
+- **Base de Datos**: Microsoft SQL Server Management Studio.  
 - **Entorno de Desarrollo**: Visual Studio.  
-- **Framework**: ASP.NET (si aplica).  
-
+- **Framework**: .NET Framework.
+- **Tecnología de Acceso a Datos**: ADO.NET.
+- - **Librerias**: FontAwesome, ReportViewerControl.
 ---
 
 ## Modelo de Base de Datos  
