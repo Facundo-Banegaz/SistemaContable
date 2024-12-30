@@ -122,7 +122,8 @@ A continuación, se presentan capturas de pantalla del sistema en funcionamiento
 <img width="215" alt="FrmIngreso" src="https://github.com/user-attachments/assets/6bb82332-8a1d-4afb-9799-c7b64263f4ad" />
 
 ### Gestion De Expensas
-<img width="382" alt="FrmExpensas" src="https://github.com/user-attachments/assets/1763d90e-77bf-4849-a33b-8a4ce3e205c0" />
+![eeeeeeee](https://github.com/user-attachments/assets/a10b7cb0-eac0-4bb2-80cc-1a0b75e835cf)
+
 
 #### Reporte de Expensas
 ![repor](https://github.com/user-attachments/assets/ad5801d6-f187-441d-9a7a-c3766f9fc868)
