@@ -1,10 +1,9 @@
 # Sistema de Liquidación de Expensas  
 
 ## Descripción del Proyecto  
-Este proyecto tiene como objetivo desarrollar un sistema integral para la gestión de expensas en consorcios de edificios y condominios. Diseñado como un **Producto Mínimo Viable (MVP)**, el sistema busca modernizar la administración de gastos e ingresos mediante herramientas tecnológicas que agilizan los cálculos, la generación de reportes y la organización de información clave.  
+Este proyecto fue desarrollado en colaboración con mi compañera, y tiene como objetivo crear un sistema integral para la gestión de expensas en consorcios de edificios y condominios. Diseñado como un Producto Mínimo Viable (MVP), el sistema busca modernizar la administración de gastos e ingresos mediante herramientas tecnológicas que agilizan los cálculos, la generación de reportes y la organización de información clave.
 
-El sistema utiliza tecnologías como **C# (.NET)** y **SQL Server**, proporcionando una interfaz intuitiva para administradores encargados de múltiples consorcios.  
-
+El sistema fue implementado utilizando tecnologías como C# (.NET) y SQL Server, proporcionando una interfaz intuitiva y funcional para que los administradores puedan gestionar múltiples consorcios de manera eficiente. Esta colaboración permitió complementar habilidades y abordar los desafíos del desarrollo con una visión conjunta, logrando un producto que satisface las necesidades de los usuarios.
 ---
 
 ## Funcionalidades Principales  
@@ -100,28 +99,54 @@ El sistema utiliza un modelo de base de datos relacional que organiza la informa
 
 ## Imágenes del Proyecto
 A continuación, se presentan capturas de pantalla del sistema en funcionamiento:
+
 ### Pantalla Login
-<img width="266" alt="FormLogin" src="https://github.com/user-attachments/assets/735ef506-2221-4c11-9b69-c0c6697d67ae" />
+<img width="342" alt="FormAgenda" src="https://github.com/user-attachments/assets/3ffe51b3-97e0-440e-afc3-7eeb883ce2ed" />
 
 ### Pantalla Principal
-<img width="287" alt="Captura de pantalla 2024-12-07 234251" src="https://github.com/user-attachments/assets/2375e5b1-c633-4c56-bc99-d363b796b8b1" />
-<img width="221" alt="FrmComunicado" src="https://github.com/user-attachments/assets/e8fd7f72-0cb0-4cd3-ab1b-972984600f2d" />
-<img width="437" alt="FrmRegistro" src="https://github.com/user-attachments/assets/cc524363-54dc-4ea9-9b0c-00ad99cf2374" />
-<img width="342" alt="FormAgenda" src="https://github.com/user-attachments/assets/a2abce8c-cc60-4a70-b816-b9990cf83a8e" />
-<img width="405" alt="FrmEgreso" src="https://github.com/user-attachments/assets/7f65fec8-15da-4b41-ab5d-8f2d2c1cd81d" />
-<img width="215" alt="FrmIngreso" src="https://github.com/user-attachments/assets/c7184b70-f008-46f4-842e-8ed4f43529f4" />
-<img width="382" alt="FrmExpensas" src="https://github.com/user-attachments/assets/0f103c77-04d4-4a2f-ac6c-7f331b0b90d2" />
+<img width="424" alt="FrmMenu" src="https://github.com/user-attachments/assets/ae863f1b-a48c-4997-a831-e76af5a28b10" />
 
 
 ### Pantalla Registro
 <img width="437" alt="FrmRegistro" src="https://github.com/user-attachments/assets/def7e5c6-b0a5-45ec-82ac-77d19eeb020b" />
 
+#### Filtros De Propietarios
+<img width="425" alt="FrmPropietarioRegistro" src="https://github.com/user-attachments/assets/338deb0a-445f-4f7f-890c-15deb0bd5c98" />
+
+#### Carga de Egresos
+<img width="405" alt="FrmEgreso" src="https://github.com/user-attachments/assets/ce2c2a80-cc0c-416f-b75d-996494789bab" />
+
+### Carga de Ingresos
+<img width="215" alt="FrmIngreso" src="https://github.com/user-attachments/assets/6bb82332-8a1d-4afb-9799-c7b64263f4ad" />
+
+#### Gestion De Expensas
 
 
-### Gestión de Consorcios
+![repor](https://github.com/user-attachments/assets/ad5801d6-f187-441d-9a7a-c3766f9fc868)
+![eg](https://github.com/user-attachments/assets/6791c594-b33e-435e-8519-51426752adb6)
 
-### Carga de Egresos
 
-### Distribución de Egresos
 
-### Generación de Reportes
+#### Gestion De Agenda
+<img width="342" alt="FormAgenda" src="https://github.com/user-attachments/assets/2cadda48-d931-48d7-9d9c-e36ecaa50f9d" />
+
+#### Gestion de Comunicado
+<img width="221" alt="FrmComunicado" src="https://github.com/user-attachments/assets/c69181cf-fc5e-4fd0-9ea2-4ecf21481046" />
+
+### Pantalla Consorcios
+<img width="406" alt="FrmConsorcio" src="https://github.com/user-attachments/assets/28076f8d-d4e4-4896-951f-b953bbe0725d" />
+<img width="262" alt="FrmAgregarEditarConsorcio" src="https://github.com/user-attachments/assets/60e29891-6190-4040-a7fb-deda50151c05" />
+
+### Pantalla Unidades
+<img width="404" alt="FrmUnidad" src="https://github.com/user-attachments/assets/824e7498-b23c-489b-85f2-ecf7deba4ecb" />
+<img width="322" alt="FrmAgregarEditarUnidad" src="https://github.com/user-attachments/assets/a3e1b617-1035-4edc-b065-b560f3515c08" />
+
+### Pantalla Propietarios
+
+<img width="408" alt="FrmPropietario" src="https://github.com/user-attachments/assets/14942f36-7a99-42dd-98f5-467a108d6186" />
+<img width="283" alt="FrmAgregarEditarPropietario" src="https://github.com/user-attachments/assets/3d38d2f6-0d0e-45c4-8d81-1abc7939be17" />
+
+### Pantalla Administrador
+<img width="405" alt="FrmAdmin" src="https://github.com/user-attachments/assets/117b37b3-8aa8-4551-bc3f-c2bbe75625aa" />
+<img width="381" alt="FrmAgregarEditarAdmin" src="https://github.com/user-attachments/assets/f9111ee3-ecdb-4124-9a1f-50172d6d5c6d" />
+
