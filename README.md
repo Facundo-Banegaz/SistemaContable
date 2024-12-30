@@ -148,8 +148,13 @@ A continuación, se presentan capturas de pantalla del sistema en funcionamiento
 1. Instalar el **.NET SDK** compatible con el proyecto.  
 2. Configurar una instancia funcional de **SQL Server**.  
 3. Tener instalado un IDE como **Visual Studio**.  
-4. Clonar el repositorio:  ```bash  [   git clone https://github.com/tuusuario/sistema-expensas.git  ](https://github.com/Facundo-Banegaz/SistemaContable.git)
+4. Clonar el repositorio:    [   git clone https://github.com/tuusuario/sistema-expensas.git  ](https://github.com/Facundo-Banegaz/SistemaContable.git)
 5. Abrir Microsoft SQL Server Management Studio.
-6. Buscar el Backup de la base de datos que se encuentra en la capa Datos y ejecutarlo en Microsoft SQL Server Management Studio.
-7. Abrir Visual Studio 2022.
+6. Restaurar la base de datos:
+Ubicar el archivo de backup de la base de datos que se encuentra en la carpeta Datos dentro del proyecto.
+Restaurar el backup en Microsoft SQL Server Management Studio.
+7.Abrir Visual Studio 2022, cargar el proyecto clonado y Configurar la cadena de conexión en el archivo de configuración para vincular el sistema con la base de datos restaurada.
+9. Compilar y ejecutar el proyecto desde Visual Studio 2022.
+
+
 
