@@ -1,9 +1,9 @@
 # Sistema de Liquidación de Expensas  
 
 ## Descripción del Proyecto  
-Este proyecto fue desarrollado en colaboración con mi compañera, y tiene como objetivo crear un sistema integral para la gestión de expensas en consorcios de edificios y condominios. Diseñado como un Producto Mínimo Viable (MVP), el sistema busca modernizar la administración de gastos e ingresos mediante herramientas tecnológicas que agilizan los cálculos, la generación de reportes y la organización de información clave.
+Este proyecto fue desarrollado en colaboración con mi compañera y tiene como objetivo crear un sistema integral para la gestión de expensas en consorcios de edificios y condominios. Diseñado como un Producto Mínimo Viable (MVP), el sistema busca modernizar la administración de gastos e ingresos mediante herramientas tecnológicas que agilizan los cálculos, la generación de reportes y la organización de información clave.
 
-El sistema fue implementado utilizando tecnologías como C# (.NET) y SQL Server, proporcionando una interfaz intuitiva y funcional para que los administradores puedan gestionar múltiples consorcios de manera eficiente. Esta colaboración permitió complementar habilidades y abordar los desafíos del desarrollo con una visión conjunta, logrando un producto que satisface las necesidades de los usuarios.
+El sistema fue implementado utilizando tecnologías como C# (.NET) y SQL Server, proporcionando una interfaz intuitiva y funcional para que los administradores puedan gestionar múltiples consorcios de manera eficiente. Además, el sistema hace uso de procedimientos almacenados en la base de datos para optimizar la interacción con los datos y mejorar el rendimiento en operaciones complejas. Esta colaboración permitió complementar habilidades y abordar los desafíos del desarrollo con una visión conjunta, logrando un producto que satisface las necesidades de los usuarios.
 
 ---
 
@@ -144,10 +144,12 @@ A continuación, se presentan capturas de pantalla del sistema en funcionamiento
 
 ## Instalación y Configuración  
 
-### Requisitos Previos  
+### Requisitos 
 1. Instalar el **.NET SDK** compatible con el proyecto.  
 2. Configurar una instancia funcional de **SQL Server**.  
 3. Tener instalado un IDE como **Visual Studio**.  
+4. Clonar el repositorio:  ```bash  [   git clone https://github.com/tuusuario/sistema-expensas.git  ](https://github.com/Facundo-Banegaz/SistemaContable.git)
+5. Abrir Microsoft SQL Server Management Studio.
+6. Buscar el Backup de la base de datos que se encuentra en la capa Datos y ejecutarlo en Microsoft SQL Server Management Studio.
+7. Abrir Visual Studio 2022.
 
-### Pasos de Instalación  
-1. Clonar el repositorio:  ```bash  [   git clone https://github.com/tuusuario/sistema-expensas.git  ](https://github.com/Facundo-Banegaz/SistemaContable.git)
